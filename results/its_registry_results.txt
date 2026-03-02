@@ -1,0 +1,31 @@
+=================================================================
+  REGISTRY ANALYSIS — RESULTS SUMMARY
+=================================================================
+
+[Analysis ①] ITS Level Change at SC Decision (2020-11)
+  Kansayaku (treat) : post_sc coef = +0.4222  p=0.000 ***
+  Yakuin (control)  : post_sc coef = -0.0115  p=0.575 
+  Ratio (kansa/yak) : post_sc coef = +0.4337  p=0.000 ***
+
+[Analysis ④-DID] DID Announcement Effect (Kansayaku vs Yakuin)
+  Model 1  DID (SC)        : -1.1633 (-68.8%) *** [p=0.000]
+  Model 2  DID (KAM 2015)  : -1.6054 (-79.9%) *** [p=0.000]
+  Model 2  DID (SC 2020)   : -0.3154 (-27.0%) *** [p=0.000]
+
+[Interpretation Guide]
+  If ITS post_sc coef for Kansayaku > 0 & significant:
+    -> Level increase in auditor-related changes after SC Decision
+    -> Consistent with small/mid-sized firm exit or rotation pressure
+  If DID (SC) < 0 & significant:
+    -> Kansayaku changes fell RELATIVELY vs Yakuin after SC Decision
+    -> Suggests consolidation / reduced small-firm registrations
+  If DID (SC) > 0 & significant:
+    -> Kansayaku changes rose RELATIVELY vs Yakuin after SC Decision
+    -> Suggests increased auditor turnover driven by SC pressure
+
+[Figures produced]
+  fig_reg_A_timeseries.png       — Raw series + ratio
+  fig_reg_B_its_counterfactual.png — ITS fitted vs counterfactual
+  fig_reg_C_event_study.png      — Monthly event study (±12m)
+  fig_reg_D_parallel_trends.png  — DID parallel trends check
+=================================================================

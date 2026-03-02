@@ -1,0 +1,29 @@
+=================================================================
+  RESULTS SUMMARY
+=================================================================
+
+[S1] Basic DID (all treat vs CompanyAct)
+  avgFee       +1,442.2  (p=0.866) 千円
+  hourlyRate   -451.5 ** (p=0.042) 円
+
+[S1p] Primary DID (FIEA_Consol vs CompanyAct)
+  avgFee       +3,629.7 ** (p=0.033) 千円
+  hourlyRate   -394.8 *** (p=0.009) 円
+
+[S2] estimatedHours DID
+  hours        +153.2  (p=0.824) 時間
+  [Caution: algebraic dependency (Reviewer B-1)]
+
+[S3] Log-transformed DID
+  log_avgFee       -0.1  (p=0.716)
+  log_hourlyRate   -0.0 * (p=0.061)
+  log_estHours     -0.1  (p=0.808)
+
+[Robustness — ALEM key issues]
+  B-1 (tautology): report avgFee & hourlyRate as primary;
+      estimatedHours as supplementary with explicit caveat.
+  B-2 (parallel trends): see fig2 (event study) & fig3 (placebo).
+      If pre-trends differ: add group-specific trends (4-2),
+      or adopt Callaway-Sant'Anna (2021) staggered DiD.
+  KAM 2015: consider modelling as first-stage shock in 2-period DiD.
+=================================================================

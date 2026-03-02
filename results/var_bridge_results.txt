@@ -1,0 +1,52 @@
+=================================================================
+  ANALYSIS ② & ③ — RESULTS SUMMARY
+  Two-layer Institutional Co-evolution Mechanism
+=================================================================
+
+[Analysis ②] VAR / Granger Causality
+  Full (2009-2025)                tori→kansa min-p=0.003 ***
+  Pre-SC (2009-2020)              tori→kansa min-p=0.021 **
+  Post-SC (2020-2025)             tori→kansa min-p=0.000 ***
+
+  Interpretation:
+  If tori→kansa significant (esp. pre-SC):
+    -> Board restructuring preceded auditor rotation
+    -> Mechanism: governance change triggers auditor re-appointment
+  If effect strengthens post-SC:
+    -> SC decision accelerated the mechanism
+
+[Analysis ③] Integrated Registry × JICPA DID
+  Model A (Basic DID)               DID=+1,442.2  p=0.866
+  Model B (+kansa_yoy)               DID=+1,442.2  p=0.868
+
+  Mediation interpretation:
+  If DID shrinks from A to B:
+    -> Registry turnover partially mediates the fee effect
+    -> Small-firm exit → market concentration → large-firm pricing power
+  If DID stable A to B:
+    -> Registry dynamics are independent channel, not confounder
+
+[Figures produced]
+  fig_analysis2_irf.png         — IRF: tori shock → kansa response
+  fig_analysis2_fevd.png        — FEVD: variance decomposition
+  fig_analysis3_integrated.png  — Registry × JICPA integrated panel
+  fig_main_coevolution.png      — KEY FIGURE: 3-stage co-evolution
+
+[Paper Reframing Suggestion]
+  New title candidate:
+  'Judicial Legitimization in a Three-Stage Institutional Evolution:
+   Evidence from Japan's Audit Market (2015-2023)'
+
+  New core narrative (2 layers × 3 stages):
+  Layer 1 (Small firms, Registry data):
+    KAM → -40% kansayaku level [ITS β2=-0.52***]
+    SC  → +53% kansayaku rebound [ITS β4=+0.42***]
+    Interpretation: regulatory cost forced small firms out (KAM),
+    SC decision triggered further auditor rotation
+  Layer 2 (Large firms, JICPA data):
+    KAM → gradual fee/hour divergence begins
+    SC  → DID: +3,630千円 fee / -395円 hourlyRate [p<0.05]
+    Interpretation: 'time accumulation / unit cost suppression' strategy
+  Bridge (Analysis ③):
+    Small-firm exit → market concentration → large-firm pricing leverage
+=================================================================
